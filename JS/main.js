@@ -11,6 +11,7 @@ function agregar() {
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+    checkbox.className = 'form-check-input';
     checkbox.addEventListener('change', function() {
         columnaNombre.classList.toggle('tachado', checkbox.checked);
     });
